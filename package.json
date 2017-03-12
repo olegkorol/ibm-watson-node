@@ -1,0 +1,26 @@
+{
+  "name": "ibm-watson-node",
+  "version": "1.0.0",
+  "description": "Testing IBM Watson's SDK for JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olegkorol/ibm-watson-node.git"
+  },
+  "keywords": [
+    "IBM",
+    "Watson",
+    "AI",
+    "Machine",
+    "Learning"
+  ],
+  "author": "Oleg Korol",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/olegkorol/ibm-watson-node/issues"
+  },
+  "homepage": "https://github.com/olegkorol/ibm-watson-node#readme"
+}
