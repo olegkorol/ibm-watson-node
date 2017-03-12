@@ -4,7 +4,8 @@
   "description": "Testing IBM Watson's SDK for JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "deploy": "now -e CONVERSATION_USERNAME=@conversation-username -e CONVERSATION_PASSWORD=@conversation-password -e WORKSPACE_ID=@workspace-id"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/olegkorol/ibm-watson-node/issues"
   },
-  "homepage": "https://github.com/olegkorol/ibm-watson-node#readme"
+  "homepage": "https://github.com/olegkorol/ibm-watson-node#readme",
+  "dependencies": {
+    "watson-developer-cloud": "^2.25.1"
+  }
 }
