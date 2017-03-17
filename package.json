@@ -4,7 +4,7 @@
   "description": "Testing IBM Watson's SDK for JavaScript",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server.js",
     "deploy": "now -e CONVERSATION_USERNAME=@conversation-username -e CONVERSATION_PASSWORD=@conversation-password -e WORKSPACE_ID=@workspace-id"
   },
   "repository": {
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/olegkorol/ibm-watson-node#readme",
   "dependencies": {
+    "express": "^4.15.2",
     "watson-developer-cloud": "^2.25.1"
   }
 }

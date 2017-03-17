@@ -1,4 +1,4 @@
-# IBM Watson implementation with Node.js
+# IBM Watson Conversation with Node.js
 
 Testing IBM Watson's SDK for JavaScript.
 
