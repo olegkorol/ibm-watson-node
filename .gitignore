@@ -1,10 +1,12 @@
 # VS Code
 .vscode/
 
+# JetBrains
+.idea/
+
 # Logs
 logs
 *.log
-npm-debug.log*
 
 # Runtime data
 pids
