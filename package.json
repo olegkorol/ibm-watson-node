@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "deploy": "now -e CONVERSATION_USERNAME=@conversation-username -e CONVERSATION_PASSWORD=@conversation-password -e WORKSPACE_ID=@workspace-id -e SLACK_TOKEN=@slack-token"
+    "deploy": "now -e CONVERSATION_USERNAME=@conversation-username -e CONVERSATION_PASSWORD=@conversation-password -e WORKSPACE_ID=@workspace-id -e SLACK_TOKEN=@slack-token",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,8 @@
     "botkit": "^0.5.2",
     "express": "^4.15.2",
     "superagent": "^3.5.0",
-    "watson-developer-cloud": "^2.25.1"
-  }
+    "watson-developer-cloud": "^2.25.1",
+    "snyk": "^1.25.2"
+  },
+  "snyk": true
 }
