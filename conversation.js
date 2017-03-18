@@ -1,7 +1,6 @@
 'use strict';
-/* eslint-env es6*/
 
-var ConversationV1 = require('watson-developer-cloud/conversation/v1');
+const ConversationV1 = require('watson-developer-cloud/conversation/v1');
 
 /**
  * Instantiate the Watson Conversation Service
@@ -16,7 +15,7 @@ const conversation = new ConversationV1({
  * Calls the conversation message api. 
  * returns a promise
  */
-module.exports.sendMessage = function(text, context) {
+exports.sendMessage = (text, context) => {
   const payload = {
     workspace_id: process.env.WORKSPACE_ID,
     input: {

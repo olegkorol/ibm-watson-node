@@ -36,6 +36,3 @@ slackController.hears(['.*'], ['direct_message', 'direct_mention', 'mention'], f
 
 slackBot.startRTM();
 
-/**
- * ...end BotKit
- */
