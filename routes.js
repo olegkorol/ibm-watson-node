@@ -4,9 +4,9 @@
 
 module.exports = function (router) {
 
-    router.get('/test', function (req, res) {
+    router.get('/', function (req, res) {
 
-        res.sendStatus(200);
+        res.status(200).send(`<h2>This is a Chat Bot that operates in Slack :)</h2>`);
     })
 
 };
