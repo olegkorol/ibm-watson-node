@@ -27,6 +27,7 @@
   "dependencies": {
     "botkit": "^0.5.2",
     "express": "^4.15.2",
+    "superagent": "^3.5.0",
     "watson-developer-cloud": "^2.25.1"
   }
 }
