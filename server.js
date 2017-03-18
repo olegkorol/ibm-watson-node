@@ -5,11 +5,14 @@ const app = express();
 const port = process.env.PORT || 4205;
 const router = express.Router();
 const routes = require('./routes');
-const chatbot = require('./botkit');
+const chatbots = require('./chatbots');
 
 // pass routes.js to router and initialize
 routes(router);
 app.use('/', router);
+
+// start slackBot
+chatbots.fn.slackBot();
 
 // start server
 app.listen(port, function (req, res) {

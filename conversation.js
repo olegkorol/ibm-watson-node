@@ -1,10 +1,7 @@
 'use strict';
-
 const ConversationV1 = require('watson-developer-cloud/conversation/v1');
 
-/**
- * Instantiate the Watson Conversation Service
- */
+// new instance of Conversation
 const conversation = new ConversationV1({
   username: process.env.CONVERSATION_USERNAME,
   password: process.env.CONVERSATION_PASSWORD,
@@ -12,8 +9,11 @@ const conversation = new ConversationV1({
 });
 
 /**
- * Calls the conversation message api. 
- * returns a promise
+ * Call to Conversation API: send message
+ * 
+ * @param {string} text 
+ * @param {object} context 
+ * @returns {promise}
  */
 exports.sendMessage = (text, context) => {
   const payload = {
