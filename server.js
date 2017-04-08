@@ -7,7 +7,7 @@ const router = express.Router();
 const routes = require('./routes');
 const chatbots = require('./chatbots');
 
-// pass routes.js to router and initialize
+// pass routes.js to router and initialise
 routes(router);
 app.use('/', router);
 
