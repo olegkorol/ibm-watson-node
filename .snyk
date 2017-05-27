@@ -1,8 +1,13 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.0
+version: v1.7.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:request:20160119':
     - watson-developer-cloud > solr-client > request:
         patched: '2017-03-18T18:06:51.465Z'
+  'npm:ms:20170412':
+    - botkit > localtunnel > debug > ms:
+        patched: '2017-05-27T04:00:09.782Z'
+    - botkit > twilio > jsonwebtoken > ms:
+        patched: '2017-05-27T04:00:09.782Z'
