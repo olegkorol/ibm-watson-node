@@ -11,3 +11,6 @@ patch:
         patched: '2017-05-27T04:00:09.782Z'
     - botkit > twilio > jsonwebtoken > ms:
         patched: '2017-05-27T04:00:09.782Z'
+  'npm:debug:20170905':
+    - botkit > localtunnel > debug:
+        patched: '2017-09-30T04:00:18.416Z'
